@@ -83,7 +83,7 @@ Edible cotton,Edible cotton,en,http://cavoc.org/cvo/ns/3/C1055,http://cavoc.org/
 「Config.js」を使用して、URIプレフィックスの略語を設定することができます。入力したURIに、設定したURIプレフィックスが含まれている場合、対応する略語に自動的に変換されアプリケーションウィンドウ上で確認することができます。また、設定した略語をアプリケーションウィンドウ上で入力することもできます。いずれの場合も「Config.js」で設定したURIプレフィックスとして認識され、データベースに保存されます。
 
 
-## Config.jsのサンプル
+## URIプレフィックスの略語設定の例
 URIプレフィックスである"origin"のバリューは"equiv"のバリューに変換されます。<br>
 以下のサンプルでは、`'http://cavoc.org/'`は`'cavoc:'`に、`'http://example.org/'`は`'ex:'`に変換されます。
 
