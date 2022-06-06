@@ -30,7 +30,7 @@
 
 
 ### 参照用語彙を作成する場合
-6. domain_words.csvをmountdir/data/に置きます。また、参照したい既存の語彙がある場合は、ファイル名をreference.csvあるいはreference.ttlとしてmountdir/data/に置きます。（reference.csvとreference.ttlのサンプルは、このREADMEの下部に提示しています。）
+6. domain_words.csvをmountdir/data/に置きます。また、参照したい既存の語彙がある場合は、ファイル名をreference.csvあるいはreference.ttlとしてmountdir/data/に置きます。（reference.csvとreference.ttlのサンプルは、本READMEの下部に提示しています。）
     -  Reference.csvあるいはreference.ttlを使用するかどうかは任意ですが、使用する場合はmountdir/src/config.jsonの以下の場所に、"reference.csv"あるいは"reference.ttl"を記入してください。デフォルトでは"wordnet"が設定されています。デフォルトのまま以下の手順7～10のコマンドを実行すると、日本語wordnetを既存の語彙として参照用語彙を作成します。
     ```
     ...
@@ -50,7 +50,7 @@
         "uri": "http://sampleWordnet/"  ← ココ
     ...
     ```    
-    -  以下の手順7～10は既存の語彙をCVDの読み込みできる形式に変換するための処理であり、domain_words.csvやreference.csvやreference.ttlの内容に不整合が存在するかどうかは検出しません。不整合が存在する場合は別途手動で修正してください。domain_words.csvやreference.csvの記述ルールは、トップフォルダの[README](../README.md)の編集用語彙のサンプルについての記載を参照ください。
+    -  以下の手順7～10は既存の語彙をCVDの読み込みできる形式に変換するための処理であり、domain_words.csvやreference.csvやreference.ttlの内容に不整合が存在するかどうかは検出しません。不整合が存在する場合は別途手動で修正してください。domain_words.csvやreference.csvの記述ルールは、トップフォルダの[README](../README.md)の編集用語彙のサンプルについての記載を参照ください。reference.ttlの記述ルールは、本READMEのreference.ttlのサンプルを参照ください。
     - domain_words.csv
       - 「用語名」列は必須、「代表語」列から「用語の説明」列は任意です。その他の列を含んでいても問題ありません。
       - 参照用語彙を作成する場合は、「用語名」列だけを使用します。
@@ -61,7 +61,7 @@
       - reference.csvの文字コードはBOM付きUTF-8で作成してください。
     - reference.ttl
       - reference.ttlを使用するかどうかは任意です。参照したいturtle形式の既存の語彙がある場合は、ファイル名を"reference.ttl"として作成してください。
-      - README下部に提示したサンプルのように、reference.ttlは主に[SKOS](https://www.w3.org/TR/2009/REC-skos-reference-20090818/)を使用して記述されている必要があります。
+      - 本README下部に提示したサンプルのように、reference.ttlは主に[SKOS](https://www.w3.org/TR/2009/REC-skos-reference-20090818/)を使用して記述されている必要があります。
 7. ```$ cd example-inputdata-creation```
 8. ```$ docker-compose build --build-arg HOST_USER_ID=$(id -u)```
 9. ```$ docker-compose run python /bin/bash```
