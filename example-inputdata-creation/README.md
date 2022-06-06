@@ -61,7 +61,7 @@
       - reference.csvの文字コードはBOM付きUTF-8で作成してください。
     - reference.ttl
       - reference.ttlを使用するかどうかは任意です。参照したいturtle形式の既存の語彙がある場合は、ファイル名を"reference.ttl"として作成してください。
-      - README下部に提示したサンプルのように、主に[SKOS](https://www.w3.org/TR/2009/REC-skos-reference-20090818/)を使用して記述されている必要があります。
+      - README下部に提示したサンプルのように、reference.ttlは主に[SKOS](https://www.w3.org/TR/2009/REC-skos-reference-20090818/)を使用して記述されている必要があります。
 7. ```$ cd example-inputdata-creation```
 8. ```$ docker-compose build --build-arg HOST_USER_ID=$(id -u)```
 9. ```$ docker-compose run python /bin/bash```
