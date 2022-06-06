@@ -76,8 +76,7 @@ Edible cotton,Edible cotton,en,http://cavoc.org/cvo/ns/3/C1055,http://cavoc.org/
 ```
 
 ## 読み込み用ファイルの作成方法
-読み込み用ファイルの作成方法は下記ページを参照ください。<br>
-[編集語彙、参照語彙の作成例](example-inputdata-creation/README.md)
+読み込み用ファイルの作成方法は[こちら](example-inputdata-creation/README.md)を参照ください。
 
 
 # URIプレフィックス
