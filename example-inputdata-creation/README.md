@@ -72,7 +72,7 @@
 
 
 ## configure
-「config.json」で設定を変更することができます。
+mountdir/src/config.jsonで設定を変更することができます。
 
 |key1(Category)|key2(Phase)|key3(Config)|value type|default value|detail|
 | --- | --- | --- | --- | --- | --- |
